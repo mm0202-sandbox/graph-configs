@@ -41,14 +41,14 @@ export const graphs: GraphType[] = [
         limitYears: 70,
         series: { classObj: { id: 'cat01' } },
         data: { classObj: { id: 'tab' }, defaultClassCode: '1' },
-        condition: [{ classObj: { id: 'area' }, defaultClassCode: '0001' }]
+        condition: [{ classObj: { id: 'area' },defaultClassCode:'00000' }]
     },
     {
         title: ['自動車輸送統計調査', '自動車輸送統計月報', '旅客輸送', '原単位'],
         statsDataId: '0003090660',
         limitYears: 70,
         series: { classObj: { id: 'cat02' } },
-        data: { classObj: { id: 'area' }, defaultClassCode: '00000' },
+        data: { classObj: { id: 'cat01' }, defaultClassCode: '00001' },
     },
     {
         title: [
