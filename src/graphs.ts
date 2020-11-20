@@ -62,4 +62,5 @@ export const graphs: GraphType[] = [
   },
 ]
 
+
 fs.writeFileSync('config/graphs.json',JSON.stringify(graphs))
