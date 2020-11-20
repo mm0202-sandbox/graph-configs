@@ -29,13 +29,13 @@ type GraphType = {
 }
 
 export const graphs: GraphType[] = [
-  // {
-  //   title: ['自動車輸送統計調査', '自動車輸送統計月報', '旅客輸送', '原単位'],
-  //   statsDataId: '0003090660',
-  //   limitYears: 70,
-  //   series: { classObj: { id: 'cat02' } },
-  //   data: { classObj: { id: 'cat01' }, defaultClassCode: '00001' },
-  // },
+  {
+    title: ['自動車輸送統計調査', '自動車輸送統計月報', '旅客輸送', '原単位'],
+    statsDataId: '0003090660',
+    limitYears: 70,
+    series: { classObj: { id: 'cat02' } },
+    data: { classObj: { id: 'cat01' }, defaultClassCode: '00001' },
+  },
   {
     title: [
       '自動車輸送統計調査',
