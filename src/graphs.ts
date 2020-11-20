@@ -39,9 +39,9 @@ export const graphs: GraphType[] = [
         title: ['消費者物価指数', '2015年基準消費者物価指数1', '消費者物価指数（2015年基準）'],
         statsDataId: '0003143513',
         limitYears: 70,
-        series: { classObj: { id: 'cat01' } },
+        series: { classObj: { id: 'area' } },
         data: { classObj: { id: 'tab' }, defaultClassCode: '1' },
-        condition: [{ classObj: { id: 'area' },defaultClassCode:'00000' }]
+        condition: [{ classObj: { id: 'cat01' },defaultClassCode:'0001' }]
     },
     {
         title: ['自動車輸送統計調査', '自動車輸送統計月報', '旅客輸送', '原単位'],
