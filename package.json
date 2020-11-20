@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn run build && git commit -m 'build before push' && exit 0"
+      "pre-commit": "yarn run build"
     }
   },
   "devDependencies": {
