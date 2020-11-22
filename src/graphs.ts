@@ -20,9 +20,12 @@ type ClassObjId =
     | 'cat14'
     | 'cat15'
 
-type Condition = {
+export type Condition = {
     classObj: { id: ClassObjId }
     defaultClassCode: string
+    category?: string
+    lv?: string
+    type?: 'map'
 }
 
 export type GraphType = {
@@ -31,10 +34,36 @@ export type GraphType = {
     limitYears: number
     series: { classObj: { id: ClassObjId } }
     data: Condition
-    condition?: Condition[]
+    conditions?: Condition[]
+    note?: string
 }
 
 export const graphs: GraphType[] = [
+    {
+        title: [
+            '消費者物価指数',
+            '2015年基準消費者物価指数1',
+            '消費者物価指数（2015年基準）',
+        ],
+        statsDataId: '0003143513',
+        limitYears: 120,
+        series: { classObj: { id: 'area' } },
+        data: { classObj: { id: 'tab' }, defaultClassCode: '1' },
+        conditions: [
+            {
+                classObj: { id: 'area' },
+                defaultClassCode: '00000',
+                category: '地域',
+            },
+            {
+                classObj: { id: 'cat01' },
+                defaultClassCode: '0001',
+                category: '品目',
+                lv: '1',
+            },
+        ],
+        note: '※ 地域によっては、取得できない品目データがあります。',
+    },
     {
         title: ['自動車輸送統計調査', '自動車輸送統計月報', '旅客輸送', '原単位'],
         statsDataId: '0003090660',
