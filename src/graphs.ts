@@ -1,6 +1,5 @@
 import * as fs from 'fs'
 import { GraphType } from './graphs.d'
-export * from './graphs.d'
 
 export const graphs: GraphType[] = [
     {
