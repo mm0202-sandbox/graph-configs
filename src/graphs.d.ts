@@ -29,7 +29,6 @@ export type Condition = {
 export type Type = 'map' | 'timeSeries' | 'bar'
 
 export type GraphType = {
-    id: string
     statsDataId: string
     title: string[]
     limitYears?: number
@@ -42,3 +41,5 @@ export type GraphType = {
     type?: { type: Type; title?: string }[]
     relatedGraphs?: string[]
 }
+
+export type GraphConfigsType = { [id: string]: GraphType }

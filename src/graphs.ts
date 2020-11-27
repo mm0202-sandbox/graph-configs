@@ -1,9 +1,8 @@
 import * as fs from 'fs'
-import { GraphType } from './graphs.d'
+import { GraphConfigsType} from './graphs.d'
 
-export const graphs: GraphType[] = [
-    {
-        id: "0003143513",
+export const graphs: GraphConfigsType = {
+    '0003143513': {
         statsDataId: '0003143513',
         title: [
             '消費者物価指数',
@@ -28,16 +27,14 @@ export const graphs: GraphType[] = [
         ],
         note: '※ 地域によっては、取得できない品目データがあります。'
     },
-    {
-        id: '0003090660',
+    '0003090660': {
         statsDataId: '0003090660',
         title: ['自動車輸送統計調査', '自動車輸送統計月報', '旅客輸送', '原単位'],
         limitYears: 70,
         series: { classObj: { id: 'cat02' } },
         data: { classObj: { id: 'cat01' }, defaultClassCode: '00001' },
     },
-    {
-        id: '0003090589',
+    '0003090589': {
         statsDataId: '0003090589',
         title: [
             '自動車輸送統計調査',
@@ -49,8 +46,7 @@ export const graphs: GraphType[] = [
         series: { classObj: { id: 'area' } },
         data: { classObj: { id: 'cat01' }, defaultClassCode: '00001' },
     },
-    {
-        id: '0003090661',
+    '0003090661': {
         statsDataId: '0003090661',
         title: [
             '自動車輸送統計調査',
@@ -62,6 +58,6 @@ export const graphs: GraphType[] = [
         series: { classObj: { id: 'area' } },
         data: { classObj: { id: 'cat01' }, defaultClassCode: '00001' },
     },
-]
+}
 
 fs.writeFileSync('config/graphs.json', JSON.stringify(graphs))
