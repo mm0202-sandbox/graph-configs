@@ -1,5 +1,5 @@
 import * as fs from 'fs'
-import { EStatGraphConfigs } from "@mm0202-package/declare";
+import { EStatGraphConfigs } from "@mm0202-package/types";
 
 export const graphs: EStatGraphConfigs = {
     '0003143513': {
