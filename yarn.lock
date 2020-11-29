@@ -23,6 +23,11 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@mm0202-package/declare@0.0.1-1":
+  version "0.0.1-1"
+  resolved "https://npm.pkg.github.com/download/@mm0202-package/declare/0.0.1-1/60b2c7cb9a5156ebde52a5bdf8a3654bd774111ea3d6c73cd22f36744f632d35#5b58d65eaedd5d479b0279af619c6a1a0968c234"
+  integrity sha512-bsF9PsVP1sj6QZzvoeUP/0kaQ6ZtavSUX+uoJsPHC+qDYuLS1TPIGghKyu2LN655HosGXyPf6vxUTGaLZd6YgQ==
+
 "@types/node@^14.14.9":
   version "14.14.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.9.tgz#04afc9a25c6ff93da14deabd65dc44485b53c8d6"

@@ -1,7 +1,7 @@
 import * as fs from 'fs'
-import { GraphConfigsType} from './graphs.d'
+import { EStatGraphConfigs } from "@mm0202-package/declare";
 
-export const graphs: GraphConfigsType = {
+export const graphs: EStatGraphConfigs = {
     '0003143513': {
         statsDataId: '0003143513',
         title: [
