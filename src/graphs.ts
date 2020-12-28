@@ -2,69 +2,69 @@ import * as fs from 'fs'
 import { EStatGraphConfigs } from "@mm0202-package/types";
 
 export const graphs: EStatGraphConfigs = {
-    '0003417694': {
-        statsDataId: '0003417694',
-        title: [
-            '経済構造実態調査',
-            '2019年経済構造実態調査（甲調査）',
-            '三次集計',
-            '事業所に関する集計2',
-            '産業（小分類）別卸売業，小売業の年間商品販売額、本支店間移動の額及び売場面積',
-        ],
-        series: { classObj: { id: 'tab' } },
-        categories: { classObj: { id: 'cat01' }, excludeClassCodes: ['00'] },
-        data: {
-            classObj: { id: 'tab' },
-            defaultClassCode: '11',
-        },
-        type: [{ type: 'bar', title: 'グラフ' }],
-        relatedGraphs: ['0003417693', '0003417695'],
-    },
-    '0003417695': {
-        statsDataId: '0003417695',
-        title: [
-            '経済構造実態調査',
-            '2019年経済構造実態調査（甲調査）',
-            '三次集計',
-            '事業所に関する集計2',
-            '卸売業，小売業別の年間商品販売額、本支店間移動の額及び売場面積―全国、都道府県',
-        ],
-        series: { classObj: { id: 'tab' } },
-        categories: { classObj: { id: 'area' }, excludeClassCodes: ['00000'] },
-        data: {
-            classObj: { id: 'tab' },
-            defaultClassCode: '11',
-        },
-        conditions: [{ classObj: { id: 'cat01' }, defaultClassCode: '00' }],
-        type: [
-            { type: 'bar', title: 'グラフ' },
-            { type: 'map', title: '地図表示' },
-        ],
-        relatedGraphs: ['0003417693', '0003417694'],
-    },
-    '0003417693': {
-        statsDataId: '0003417693',
-        title: [
-            '経済構造実態調査',
-            '2019年経済構造実態調査（甲調査）',
-            '三次集計',
-            '事業所に関する集計1',
-            '産業（大分類）別売上（収入）金額―全国、都道府県',
-        ],
-        series: { classObj: { id: 'cat01' } },
-        categories: { classObj: { id: 'area' }, excludeClassCodes: ['00000'] },
-        data: {
-            classObj: { id: 'cat01' },
-            defaultClassCode: '01',
-            excludeClassCodes: ['00', '04', '06', '08', '10'],
-        },
-        dataDisplay: { classObj: { id: 'tab' }, defaultClassCode: '02' },
-        type: [
-            { type: 'bar', title: 'グラフ' },
-            { type: 'map', title: '地図表示' },
-        ],
-        relatedGraphs: ['0003417695', '0003417694'],
-    },
+    // '0003417694': {
+    //     statsDataId: '0003417694',
+    //     title: [
+    //         '経済構造実態調査',
+    //         '2019年経済構造実態調査（甲調査）',
+    //         '三次集計',
+    //         '事業所に関する集計2',
+    //         '産業（小分類）別卸売業，小売業の年間商品販売額、本支店間移動の額及び売場面積',
+    //     ],
+    //     series: { classObj: { id: 'tab' } },
+    //     categories: { classObj: { id: 'cat01' }, excludeClassCodes: ['00'] },
+    //     data: {
+    //         classObj: { id: 'tab' },
+    //         defaultClassCode: '11',
+    //     },
+    //     type: [{ type: 'bar', title: 'グラフ' }],
+    //     relatedGraphs: ['0003417693', '0003417695'],
+    // },
+    // '0003417695': {
+    //     statsDataId: '0003417695',
+    //     title: [
+    //         '経済構造実態調査',
+    //         '2019年経済構造実態調査（甲調査）',
+    //         '三次集計',
+    //         '事業所に関する集計2',
+    //         '卸売業，小売業別の年間商品販売額、本支店間移動の額及び売場面積―全国、都道府県',
+    //     ],
+    //     series: { classObj: { id: 'tab' } },
+    //     categories: { classObj: { id: 'area' }, excludeClassCodes: ['00000'] },
+    //     data: {
+    //         classObj: { id: 'tab' },
+    //         defaultClassCode: '11',
+    //     },
+    //     conditions: [{ classObj: { id: 'cat01' }, defaultClassCode: '00' }],
+    //     type: [
+    //         { type: 'bar', title: 'グラフ' },
+    //         { type: 'map', title: '地図表示' },
+    //     ],
+    //     relatedGraphs: ['0003417693', '0003417694'],
+    // },
+    // '0003417693': {
+    //     statsDataId: '0003417693',
+    //     title: [
+    //         '経済構造実態調査',
+    //         '2019年経済構造実態調査（甲調査）',
+    //         '三次集計',
+    //         '事業所に関する集計1',
+    //         '産業（大分類）別売上（収入）金額―全国、都道府県',
+    //     ],
+    //     series: { classObj: { id: 'cat01' } },
+    //     categories: { classObj: { id: 'area' }, excludeClassCodes: ['00000'] },
+    //     data: {
+    //         classObj: { id: 'cat01' },
+    //         defaultClassCode: '01',
+    //         excludeClassCodes: ['00', '04', '06', '08', '10'],
+    //     },
+    //     dataDisplay: { classObj: { id: 'tab' }, defaultClassCode: '02' },
+    //     type: [
+    //         { type: 'bar', title: 'グラフ' },
+    //         { type: 'map', title: '地図表示' },
+    //     ],
+    //     relatedGraphs: ['0003417695', '0003417694'],
+    // },
     '0003143513': {
         statsDataId: '0003143513',
         title: [
